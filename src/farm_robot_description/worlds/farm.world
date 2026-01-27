@@ -1,0 +1,143 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <world name='farm_world'>
+    <gravity>0 0 -9.8</gravity>
+    <physics type='ode'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+
+    <!-- Ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Sun -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Crop rows: long box models forming lanes -->
+    <!-- Row A -->
+    <model name='row_a_left'>
+      <pose>-2 1 0 0 0 0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>10 0.2 0.3</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.0 0.5 0.0 1</ambient>
+            <diffuse>0.0 0.6 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>10 0.2 0.3</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+      <static>true</static>
+    </model>
+
+    <model name='row_a_right'>
+      <pose>-2 -1 0 0 0 0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>10 0.2 0.3</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.0 0.5 0.0 1</ambient>
+            <diffuse>0.0 0.6 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>10 0.2 0.3</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+      <static>true</static>
+    </model>
+
+    <!-- Row B -->
+    <model name='row_b_left'>
+      <pose>4 1 0 0 0 0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>10 0.2 0.3</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.0 0.5 0.0 1</ambient>
+            <diffuse>0.0 0.6 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>10 0.2 0.3</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+      <static>true</static>
+    </model>
+
+    <model name='row_b_right'>
+      <pose>4 -1 0 0 0 0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>10 0.2 0.3</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.0 0.5 0.0 1</ambient>
+            <diffuse>0.0 0.6 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>10 0.2 0.3</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+      <static>true</static>
+    </model>
+
+    <!-- Spawn pose for robot -->
+    <model name='start_marker'>
+      <pose>-2 0 0 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <ambient>0.8 0.1 0.1 1</ambient>
+            <diffuse>0.8 0.1 0.1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>

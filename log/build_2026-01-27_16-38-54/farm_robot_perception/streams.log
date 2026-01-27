@@ -1,0 +1,21 @@
+[1.241s] Invoking command in '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_perception': PYTHONPATH=/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/farm_robot_perception build --build-base /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/build install --record /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/install.log --single-version-externally-managed install_data
+[1.622s] running egg_info
+[1.622s] writing ../../build/farm_robot_perception/farm_robot_perception.egg-info/PKG-INFO
+[1.623s] writing dependency_links to ../../build/farm_robot_perception/farm_robot_perception.egg-info/dependency_links.txt
+[1.623s] writing entry points to ../../build/farm_robot_perception/farm_robot_perception.egg-info/entry_points.txt
+[1.623s] writing requirements to ../../build/farm_robot_perception/farm_robot_perception.egg-info/requires.txt
+[1.623s] writing top-level names to ../../build/farm_robot_perception/farm_robot_perception.egg-info/top_level.txt
+[1.626s] reading manifest file '../../build/farm_robot_perception/farm_robot_perception.egg-info/SOURCES.txt'
+[1.628s] writing manifest file '../../build/farm_robot_perception/farm_robot_perception.egg-info/SOURCES.txt'
+[1.628s] running build
+[1.628s] running build_py
+[1.628s] running install
+[1.629s] running install_lib
+[1.631s] running install_data
+[1.631s] running install_egg_info
+[1.634s] removing '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages/farm_robot_perception-0.1.0-py3.10.egg-info' (and everything under it)
+[1.635s] Copying ../../build/farm_robot_perception/farm_robot_perception.egg-info to /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages/farm_robot_perception-0.1.0-py3.10.egg-info
+[1.636s] running install_scripts
+[1.661s] Installing crop_stress_node script to /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/farm_robot_perception
+[1.662s] writing list of installed files to '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/install.log'
+[1.692s] Invoked command in '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_perception' returned '0': PYTHONPATH=/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/farm_robot_perception build --build-base /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/build install --record /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/install.log --single-version-externally-managed install_data

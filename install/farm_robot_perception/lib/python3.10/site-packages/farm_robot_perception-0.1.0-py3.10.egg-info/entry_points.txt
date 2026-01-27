@@ -1,0 +1,3 @@
+[console_scripts]
+crop_stress_node = farm_robot_perception.crop_stress_node:main
+

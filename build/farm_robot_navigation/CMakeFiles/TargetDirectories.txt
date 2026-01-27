@@ -1,0 +1,9 @@
+/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation/CMakeFiles/uninstall.dir
+/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation/CMakeFiles/farm_robot_navigation_uninstall.dir
+/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation/CMakeFiles/test.dir
+/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation/CMakeFiles/edit_cache.dir
+/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation/CMakeFiles/rebuild_cache.dir
+/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation/CMakeFiles/list_install_components.dir
+/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation/CMakeFiles/install.dir
+/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation/CMakeFiles/install/local.dir
+/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation/CMakeFiles/install/strip.dir

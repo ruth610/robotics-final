@@ -1,0 +1,2 @@
+source;share/farm_robot_navigation/environment/ament_prefix_path.sh
+source;share/farm_robot_navigation/environment/path.sh

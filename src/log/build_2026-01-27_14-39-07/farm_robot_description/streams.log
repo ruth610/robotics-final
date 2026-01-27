@@ -1,0 +1,51 @@
+[0.119s] Invoking command in '/home/rutha/Projects/class_projects/robotics_final/src/build/farm_robot_description': /usr/bin/cmake /home/rutha/Projects/class_projects/robotics_final/src/farm_robot_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description
+[2.548s] -- The C compiler identification is GNU 11.4.0
+[2.548s] -- The CXX compiler identification is GNU 11.4.0
+[2.548s] -- Detecting C compiler ABI info
+[2.549s] -- Detecting C compiler ABI info - done
+[2.549s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.553s] -- Detecting C compile features
+[2.553s] -- Detecting C compile features - done
+[2.554s] -- Detecting CXX compiler ABI info
+[2.554s] -- Detecting CXX compiler ABI info - done
+[2.554s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.554s] -- Detecting CXX compile features
+[2.555s] -- Detecting CXX compile features - done
+[2.555s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.555s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.558s] -- Configuring done
+[2.558s] -- Generating done
+[2.559s] -- Build files have been written to: /home/rutha/Projects/class_projects/robotics_final/src/build/farm_robot_description
+[2.559s] [33mCMake Warning:
+[2.559s]   Manually-specified variables were not used by the project:
+[2.559s] 
+[2.559s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[2.559s] 
+[2.559s] [0m
+[2.565s] Invoked command in '/home/rutha/Projects/class_projects/robotics_final/src/build/farm_robot_description' returned '0': /usr/bin/cmake /home/rutha/Projects/class_projects/robotics_final/src/farm_robot_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description
+[2.566s] Invoking command in '/home/rutha/Projects/class_projects/robotics_final/src/build/farm_robot_description': /usr/bin/cmake --build /home/rutha/Projects/class_projects/robotics_final/src/build/farm_robot_description -- -j4 -l4
+[2.695s] Invoked command in '/home/rutha/Projects/class_projects/robotics_final/src/build/farm_robot_description' returned '0': /usr/bin/cmake --build /home/rutha/Projects/class_projects/robotics_final/src/build/farm_robot_description -- -j4 -l4
+[2.729s] Invoking command in '/home/rutha/Projects/class_projects/robotics_final/src/build/farm_robot_description': /usr/bin/cmake --install /home/rutha/Projects/class_projects/robotics_final/src/build/farm_robot_description
+[2.750s] -- Install configuration: ""
+[2.750s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/urdf
+[2.750s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/urdf/farm_bot.xacro
+[2.751s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/worlds
+[2.751s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/worlds/farm.world
+[2.751s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/launch
+[2.754s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/launch/bringup_gazebo.launch.py
+[2.756s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/ament_index/resource_index/package_run_dependencies/farm_robot_description
+[2.756s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/ament_index/resource_index/parent_prefix_path/farm_robot_description
+[2.757s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/environment/ament_prefix_path.sh
+[2.757s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/environment/ament_prefix_path.dsv
+[2.758s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/environment/path.sh
+[2.758s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/environment/path.dsv
+[2.758s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/local_setup.bash
+[2.759s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/local_setup.sh
+[2.759s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/local_setup.zsh
+[2.759s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/local_setup.dsv
+[2.759s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/package.dsv
+[2.759s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/ament_index/resource_index/packages/farm_robot_description
+[2.759s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/cmake/farm_robot_descriptionConfig.cmake
+[2.759s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/cmake/farm_robot_descriptionConfig-version.cmake
+[2.760s] -- Installing: /home/rutha/Projects/class_projects/robotics_final/src/install/farm_robot_description/share/farm_robot_description/package.xml
+[2.763s] Invoked command in '/home/rutha/Projects/class_projects/robotics_final/src/build/farm_robot_description' returned '0': /usr/bin/cmake --install /home/rutha/Projects/class_projects/robotics_final/src/build/farm_robot_description
