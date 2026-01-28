@@ -1,0 +1,17 @@
+[3.034s] Invoking command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception': PYTHONPATH=/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/build --no-deps symlink_data
+[4.254s] running develop
+[5.265s] running egg_info
+[5.266s] writing farm_robot_perception.egg-info/PKG-INFO
+[5.267s] writing dependency_links to farm_robot_perception.egg-info/dependency_links.txt
+[5.268s] writing entry points to farm_robot_perception.egg-info/entry_points.txt
+[5.268s] writing requirements to farm_robot_perception.egg-info/requires.txt
+[5.269s] writing top-level names to farm_robot_perception.egg-info/top_level.txt
+[5.277s] reading manifest file 'farm_robot_perception.egg-info/SOURCES.txt'
+[5.281s] writing manifest file 'farm_robot_perception.egg-info/SOURCES.txt'
+[5.282s] running build_ext
+[5.283s] Creating /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages/farm-robot-perception.egg-link (link to .)
+[5.284s] Installing crop_stress_node script to /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/farm_robot_perception
+[5.284s] 
+[5.285s] Installed /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception
+[5.285s] running symlink_data
+[5.369s] Invoked command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception' returned '0': PYTHONPATH=/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/build --no-deps symlink_data

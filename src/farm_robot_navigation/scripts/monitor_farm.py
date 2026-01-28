@@ -19,22 +19,16 @@ class FarmMonitor(Node):
         # Lanes are at y=0, y=1, y=-1. Plants exist from x=-5 to x=5.
 
         self.waypoints = [
-            # 1. Drive Forward to end of current lane (Center, y=0)
-            {'x': 5.5, 'y': 0.0, 'w': 1.0, 'z': 0.0},
+            # 1. Drive East down Row 1 (y=0.5) - Straddling the row
+            {'x': 5.5, 'y': 0.5, 'w': 1.0, 'z': 0.0},
 
-            # 2. Move to start of Top Lane (y=1) in the open area
-            {'x': 5.5, 'y': 1.0, 'w': 0.707, 'z': 0.707},
+            # 2. Move to start of Row 2 (y=-0.5) in the open area
+            {'x': 5.5, 'y': -0.5, 'w': 0.707, 'z': -0.707},
 
-            # 3. Drive West down Top Lane
-            {'x': -5.5, 'y': 1.0, 'w': 0.0, 'z': 1.0},
+            # 3. Drive West down Row 2 (y=-0.5)
+            {'x': -5.5, 'y': -0.5, 'w': 0.0, 'z': 1.0},
 
-            # 4. Move to start of Bottom Lane (y=-1) in the open area
-            {'x': -5.5, 'y': -1.0, 'w': 0.707, 'z': -0.707},
-
-            # 5. Drive East down Bottom Lane
-            {'x': 5.5, 'y': -1.0, 'w': 1.0, 'z': 0.0},
-
-            # 6. Return Home
+            # 4. Return Home
             {'x': 0.0, 'y': 0.0, 'w': 1.0, 'z': 0.0}
         ]
         self.current_wp_index = 0

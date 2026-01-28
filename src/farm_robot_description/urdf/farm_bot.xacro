@@ -1,148 +1,270 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="farm_bot">
-  <!-- Basic dimensions -->
-  <xacro:property name="wheel_radius" value="0.08"/>
-  <xacro:property name="wheel_width" value="0.03"/>
-  <xacro:property name="chassis_length" value="0.40"/>
-  <xacro:property name="chassis_width" value="0.30"/>
-  <xacro:property name="chassis_height" value="0.12"/>
-  <xacro:property name="wheel_sep" value="${chassis_width}"/>
 
-  <!-- Dummy root frame (avoids KDL root inertia issue) -->
+  <!-- =================================================================================== -->
+  <!-- DIMENSIONS & VISUAL PROPERTIES -->
+  <!-- =================================================================================== -->
+  <xacro:property name="leg_height" value="0.35"/>
+  <xacro:property name="leg_radius" value="0.01"/>
+  <xacro:property name="plate_length" value="0.40"/>
+  <xacro:property name="plate_width" value="0.28"/>
+  <xacro:property name="plate_thickness" value="0.03"/>
+
+  <xacro:property name="wheel_radius" value="0.06"/>
+  <xacro:property name="wheel_width" value="0.02"/>
+
+  <!-- Spacing for legs/wheels relative to center -->
+  <xacro:property name="wheel_x_offset" value="0.18"/> <!-- Distance to front/back -->
+  <xacro:property name="wheel_y_offset" value="0.15"/> <!-- Distance to Left/Right -->
+
+  <!-- =================================================================================== -->
+  <!-- MATERIALS -->
+  <!-- =================================================================================== -->
+  <material name="orange">
+    <color rgba="1.0 0.5 0.0 1.0"/>
+  </material>
+  <material name="blue">
+    <color rgba="0.0 0.0 0.8 1.0"/>
+  </material>
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+  <material name="black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
+
+  <!-- =================================================================================== -->
+  <!-- BASE LINKS & JOINTS -->
+  <!-- =================================================================================== -->
+
+  <!-- Dummy root link (Projected on ground) -->
   <link name="base_footprint"/>
 
-  <!-- Base link -->
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 ${wheel_radius}" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Main Body Link (Contains the Frame Structure) -->
   <link name="base_link">
     <inertial>
-      <origin xyz="0 0 0"/>
-      <mass value="8.0"/>
-      <inertia ixx="0.2" ixy="0" ixz="0" iyy="0.2" iyz="0" izz="0.2"/>
+      <mass value="10.0"/>
+      <origin xyz="0 0 ${leg_height/2}"/>
+      <inertia ixx="0.5" ixy="0" ixz="0" iyy="0.5" iyz="0" izz="0.5"/>
     </inertial>
+
+    <!-- Top Plate (Tray) - Orange -->
     <visual>
-      <origin xyz="0 0 ${chassis_height/2}"/>
+      <origin xyz="0 0 ${leg_height}"/>
       <geometry>
-        <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+        <box size="${plate_length} ${plate_width} ${plate_thickness}"/>
       </geometry>
-      <material name="grey">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
+      <material name="orange"/>
     </visual>
     <collision>
-      <origin xyz="0 0 ${chassis_height/2}"/>
+      <origin xyz="0 0 ${leg_height}"/>
       <geometry>
-        <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+        <box size="${plate_length} ${plate_width} ${plate_thickness}"/>
       </geometry>
     </collision>
-  </link>
 
-  <!-- Wheels -->
-  <link name="left_wheel">
+    <!-- Tray Rails (Visual Detail) - Orange -->
     <visual>
-      <origin rpy="0 1.5708 0"/>
+      <origin xyz="0 ${plate_width/2} ${leg_height + 0.05}"/>
       <geometry>
-        <cylinder length="${wheel_width}" radius="${wheel_radius}"/>
+        <box size="${plate_length} 0.02 0.1"/>
       </geometry>
-      <material name="black">
-        <color rgba="0.1 0.1 0.1 1.0"/>
-      </material>
+      <material name="orange"/>
+    </visual>
+    <visual>
+      <origin xyz="0 -${plate_width/2} ${leg_height + 0.05}"/>
+      <geometry>
+        <box size="${plate_length} 0.02 0.1"/>
+      </geometry>
+      <material name="orange"/>
+    </visual>
+
+    <!-- LEGS (Blue) -->
+    <!-- Front Left -->
+    <visual>
+      <origin xyz="${wheel_x_offset} ${wheel_y_offset} ${leg_height/2}"/>
+      <geometry><cylinder length="${leg_height}" radius="${leg_radius}"/></geometry>
+      <material name="blue"/>
     </visual>
     <collision>
-      <origin rpy="0 1.5708 0"/>
-      <geometry>
-        <cylinder length="${wheel_width}" radius="${wheel_radius}"/>
-      </geometry>
+      <origin xyz="${wheel_x_offset} ${wheel_y_offset} ${leg_height/2}"/>
+      <geometry><cylinder length="${leg_height}" radius="${leg_radius}"/></geometry>
     </collision>
-    <inertial>
-      <mass value="0.5"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
-    </inertial>
-  </link>
 
-  <link name="right_wheel">
+    <!-- Front Right -->
     <visual>
-      <origin rpy="0 1.5708 0"/>
-      <geometry>
-        <cylinder length="${wheel_width}" radius="${wheel_radius}"/>
-      </geometry>
-      <material name="black">
-        <color rgba="0.1 0.1 0.1 1.0"/>
-      </material>
+      <origin xyz="${wheel_x_offset} -${wheel_y_offset} ${leg_height/2}"/>
+      <geometry><cylinder length="${leg_height}" radius="${leg_radius}"/></geometry>
+      <material name="blue"/>
     </visual>
     <collision>
-      <origin rpy="0 1.5708 0"/>
-      <geometry>
-        <cylinder length="${wheel_width}" radius="${wheel_radius}"/>
-      </geometry>
+      <origin xyz="${wheel_x_offset} -${wheel_y_offset} ${leg_height/2}"/>
+      <geometry><cylinder length="${leg_height}" radius="${leg_radius}"/></geometry>
     </collision>
-    <inertial>
-      <mass value="0.5"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
-    </inertial>
+
+    <!-- Rear Left -->
+    <visual>
+      <origin xyz="-${wheel_x_offset} ${wheel_y_offset} ${leg_height/2}"/>
+      <geometry><cylinder length="${leg_height}" radius="${leg_radius}"/></geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <origin xyz="-${wheel_x_offset} ${wheel_y_offset} ${leg_height/2}"/>
+      <geometry><cylinder length="${leg_height}" radius="${leg_radius}"/></geometry>
+    </collision>
+
+    <!-- Rear Right -->
+    <visual>
+      <origin xyz="-${wheel_x_offset} -${wheel_y_offset} ${leg_height/2}"/>
+      <geometry><cylinder length="${leg_height}" radius="${leg_radius}"/></geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <origin xyz="-${wheel_x_offset} -${wheel_y_offset} ${leg_height/2}"/>
+      <geometry><cylinder length="${leg_height}" radius="${leg_radius}"/></geometry>
+    </collision>
+
+    <!-- Side Bars (Connecting Front/Back) - Blue -->
+    <visual>
+      <origin xyz="0 ${wheel_y_offset} ${leg_height/3}"/>
+      <geometry><box size="${plate_length} ${leg_radius*1.5} ${leg_radius*1.5}"/></geometry>
+      <material name="blue"/>
+    </visual>
+    <visual>
+      <origin xyz="0 -${wheel_y_offset} ${leg_height/3}"/>
+      <geometry><box size="${plate_length} ${leg_radius*1.5} ${leg_radius*1.5}"/></geometry>
+      <material name="blue"/>
+    </visual>
+
   </link>
 
-  <!-- Camera -->
+  <!-- =================================================================================== -->
+  <!-- WHEELS -->
+  <!-- =================================================================================== -->
+  <xacro:macro name="wheel" params="name x y friction is_driven">
+    <link name="${name}_link">
+      <visual>
+        <origin rpy="1.5707 0 0"/>
+        <geometry>
+          <cylinder length="${wheel_width}" radius="${wheel_radius}"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <collision>
+        <origin rpy="1.5707 0 0"/>
+        <geometry>
+          <cylinder length="${wheel_width}" radius="${wheel_radius}"/>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>${friction}</mu>
+              <mu2>${friction}</mu2>
+              <fdir1>1 0 0</fdir1>
+              <slip1>0.0</slip1>
+              <slip2>0.0</slip2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <inertial>
+        <mass value="1.5"/>
+        <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      </inertial>
+    </link>
+
+    <joint name="${name}_joint" type="continuous">
+      <parent link="base_link"/>
+      <child link="${name}_link"/>
+      <origin xyz="${x} ${y} 0"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- DRIVEN WHEELS (REAR) -->
+  <xacro:wheel name="rear_left_wheel" x="-${wheel_x_offset}" y="${wheel_y_offset}" friction="1.0" is_driven="true"/>
+  <xacro:wheel name="rear_right_wheel" x="-${wheel_x_offset}" y="-${wheel_y_offset}" friction="1.0" is_driven="true"/>
+
+  <!-- PASSIVE WHEELS (FRONT) -->
+  <xacro:wheel name="front_left_wheel" x="${wheel_x_offset}" y="${wheel_y_offset}" friction="0.01" is_driven="false"/>
+  <xacro:wheel name="front_right_wheel" x="${wheel_x_offset}" y="-${wheel_y_offset}" friction="0.01" is_driven="false"/>
+
+
+  <!-- =================================================================================== -->
+  <!-- SENSORS -->
+  <!-- =================================================================================== -->
+
+  <material name="red">
+    <color rgba="1.0 0.0 0.0 1.0"/>
+  </material>
+
+  <!-- Camera (Hanging UNDER the front tray) -->
   <link name="camera_link">
     <visual>
-      <origin xyz="${chassis_length/2 - 0.1} 0 ${chassis_height + 0.15}"/>
       <geometry>
-        <box size="0.05 0.05 0.05"/>
+        <box size="0.03 0.1 0.03"/>
       </geometry>
-      <material name="blue">
-        <color rgba="0.2 0.2 0.8 1.0"/>
-      </material>
+      <material name="red"/>
     </visual>
     <inertial>
-      <mass value="0.2"/>
+      <mass value="0.1"/>
       <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
     </inertial>
   </link>
-
-  <!-- Joints -->
-  <joint name="base_footprint_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <parent link="base_footprint"/>
-    <child link="base_link"/>
-  </joint>
-
-  <joint name="left_wheel_joint" type="continuous">
-    <origin xyz="0 ${wheel_sep/2} ${wheel_radius}" rpy="0 0 0"/>
-    <parent link="base_link"/>
-    <child link="left_wheel"/>
-    <axis xyz="0 1 0"/>
-  </joint>
-
-  <joint name="right_wheel_joint" type="continuous">
-    <origin xyz="0 -${wheel_sep/2} ${wheel_radius}" rpy="0 0 0"/>
-    <parent link="base_link"/>
-    <child link="right_wheel"/>
-    <axis xyz="0 1 0"/>
-  </joint>
-
   <joint name="camera_joint" type="fixed">
-    <origin xyz="${chassis_length/2 - 0.1} 0 ${chassis_height + 0.15}"/>
     <parent link="base_link"/>
     <child link="camera_link"/>
+    <!-- Position: Front edge, centered, distinctly UNDER the plate -->
+    <origin xyz="${plate_length/2 - 0.04} 0 ${leg_height - plate_thickness/2 - 0.02}" rpy="0 0.26 0"/>
   </joint>
 
-  <!-- Lidar Link -->
+  <!-- Lidar (Top of tray) -->
   <link name="lidar_link">
-    <visual>
+     <visual>
       <geometry>
-        <cylinder radius="0.05" length="0.05"/>
+        <cylinder radius="0.05" length="0.06"/>
       </geometry>
-      <material name="black">
-        <color rgba="0 0 0 1"/>
-      </material>
+      <material name="red"/>
     </visual>
   </link>
-
   <joint name="lidar_joint" type="fixed">
-    <origin xyz="${chassis_length/2 - 0.05} 0 ${chassis_height + 0.05}" rpy="0 0 0"/>
     <parent link="base_link"/>
     <child link="lidar_link"/>
+    <!-- Position: Top of plate, centered -->
+    <origin xyz="0 0 ${leg_height + plate_thickness/2 + 0.03}" rpy="0 0 0"/>
   </joint>
 
-  <!-- Lidar Sensor -->
+  <!-- =================================================================================== -->
+  <!-- GAZEBO PLUGINS -->
+  <!-- =================================================================================== -->
+
+  <gazebo>
+    <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+      <ros>
+        <namespace>/</namespace>
+      </ros>
+      <update_rate>50</update_rate>
+
+      <left_joint>rear_left_wheel_joint</left_joint>
+      <right_joint>rear_right_wheel_joint</right_joint>
+
+      <wheel_separation>${wheel_y_offset*2}</wheel_separation>
+      <wheel_diameter>${wheel_radius*2}</wheel_diameter>
+
+      <robot_base_frame>base_footprint</robot_base_frame>
+      <odometry_frame>odom</odometry_frame>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>true</publish_wheel_tf>
+    </plugin>
+  </gazebo>
+
   <gazebo reference="lidar_link">
     <sensor type="ray" name="lidar_sensor">
       <pose>0 0 0 0 0 0</pose>
@@ -174,27 +296,6 @@
     </sensor>
   </gazebo>
 
-  <!-- Gazebo plugins -->
-  <gazebo>
-    <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
-      <ros>
-        <namespace>/</namespace>
-      </ros>
-      <update_rate>50</update_rate>
-      <left_joint>left_wheel_joint</left_joint>
-      <right_joint>right_wheel_joint</right_joint>
-      <wheel_separation>${wheel_sep}</wheel_separation>
-      <wheel_diameter>${2*wheel_radius}</wheel_diameter>
-      <robot_base_frame>base_footprint</robot_base_frame>
-      <odometry_frame>odom</odometry_frame>
-      <command_topic>cmd_vel</command_topic>
-      <publish_odom>true</publish_odom>
-      <publish_odom_tf>true</publish_odom_tf>
-      <publish_wheel_tf>true</publish_wheel_tf>
-    </plugin>
-  </gazebo>
-
-  <!-- Camera sensor with Gazebo plugin -->
   <gazebo reference="camera_link">
     <sensor type="camera" name="camera_sensor">
       <update_rate>15</update_rate>
@@ -214,9 +315,10 @@
         <ros>
           <namespace>/</namespace>
         </ros>
-        <frame_name>camera_link</frame_name>
-        <camera_name>farm_camera</camera_name>
+        <camera_name>camera</camera_name>
         <image_topic_name>image_raw</image_topic_name>
+        <camera_info_topic_name>camera_info</camera_info_topic_name>
+        <frame_name>camera_link</frame_name>
       </plugin>
     </sensor>
   </gazebo>

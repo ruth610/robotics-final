@@ -6,6 +6,7 @@ from launch.substitutions import Command
 from launch.substitutions import PathJoinSubstitution
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
+from launch_ros.parameter_descriptions import ParameterValue
 
 
 def generate_launch_description():
@@ -13,7 +14,8 @@ def generate_launch_description():
     world = PathJoinSubstitution([pkg_desc, 'worlds', 'farm.world'])
     robot_xacro = PathJoinSubstitution([pkg_desc, 'urdf', 'farm_bot.xacro'])
 
-    robot_description = {'robot_description': Command(['xacro ', robot_xacro])}
+    robot_description_content = Command(['xacro ', robot_xacro])
+    robot_description = {'robot_description': ParameterValue(robot_description_content, value_type=str)}
 
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(

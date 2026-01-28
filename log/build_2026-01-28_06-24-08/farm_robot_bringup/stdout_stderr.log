@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing farm_robot_bringup.egg-info/PKG-INFO
+writing dependency_links to farm_robot_bringup.egg-info/dependency_links.txt
+writing entry points to farm_robot_bringup.egg-info/entry_points.txt
+writing requirements to farm_robot_bringup.egg-info/requires.txt
+writing top-level names to farm_robot_bringup.egg-info/top_level.txt
+reading manifest file 'farm_robot_bringup.egg-info/SOURCES.txt'
+writing manifest file 'farm_robot_bringup.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/lib/python3.10/site-packages/farm-robot-bringup.egg-link (link to .)
+
+Installed /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup
+running symlink_data
+symbolically linking /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup/resource/farm_robot_bringup -> /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/ament_index/resource_index/packages
+symbolically linking /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup/launch/bringup.launch.py -> /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup/launch
+symbolically linking /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup/package.xml -> /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup

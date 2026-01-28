@@ -9,5 +9,5 @@ setup.py
 ../../build/farm_robot_bringup/farm_robot_bringup.egg-info/top_level.txt
 ../../build/farm_robot_bringup/farm_robot_bringup.egg-info/zip-safe
 farm_robot_bringup/__init__.py
-launch/bringup.launch.py
+launch/farm_robot.launch.py
 resource/farm_robot_bringup
