@@ -1,0 +1,28 @@
+running develop
+Removing /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages/farm-robot-perception.egg-link (link to .)
+running egg_info
+writing ../../build/farm_robot_perception/farm_robot_perception.egg-info/PKG-INFO
+writing dependency_links to ../../build/farm_robot_perception/farm_robot_perception.egg-info/dependency_links.txt
+writing entry points to ../../build/farm_robot_perception/farm_robot_perception.egg-info/entry_points.txt
+writing requirements to ../../build/farm_robot_perception/farm_robot_perception.egg-info/requires.txt
+writing top-level names to ../../build/farm_robot_perception/farm_robot_perception.egg-info/top_level.txt
+reading manifest file '../../build/farm_robot_perception/farm_robot_perception.egg-info/SOURCES.txt'
+writing manifest file '../../build/farm_robot_perception/farm_robot_perception.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages/farm_robot_perception
+copying /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/build/lib/farm_robot_perception/__init__.py -> /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages/farm_robot_perception
+copying /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/build/lib/farm_robot_perception/crop_stress_node.py -> /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages/farm_robot_perception
+byte-compiling /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages/farm_robot_perception/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages/farm_robot_perception/crop_stress_node.py to crop_stress_node.cpython-310.pyc
+running install_data
+copying resource/farm_robot_perception -> /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/ament_index/resource_index/packages
+copying launch/perception.launch.py -> /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception/launch
+copying package.xml -> /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception
+running install_egg_info
+Copying ../../build/farm_robot_perception/farm_robot_perception.egg-info to /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages/farm_robot_perception-0.1.0-py3.10.egg-info
+running install_scripts
+Installing crop_stress_node script to /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/farm_robot_perception
+writing list of installed files to '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/install.log'

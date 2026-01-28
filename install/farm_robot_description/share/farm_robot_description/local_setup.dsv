@@ -1,2 +1,1 @@
-source;share/farm_robot_description/environment/ament_prefix_path.sh
-source;share/farm_robot_description/environment/path.sh
+/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_description/ament_cmake_environment_hooks/local_setup.dsv

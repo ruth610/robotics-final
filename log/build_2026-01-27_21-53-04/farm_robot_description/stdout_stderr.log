@@ -1,0 +1,26 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/lib/farm_robot_description/delete_entity.py
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/urdf/farm_bot.xacro
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/worlds/farm.world
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/launch/bringup_gazebo.launch.py
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/ament_index/resource_index/package_run_dependencies/farm_robot_description
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/ament_index/resource_index/parent_prefix_path/farm_robot_description
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/environment/path.sh
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/environment/path.dsv
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/local_setup.bash
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/local_setup.sh
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/local_setup.zsh
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/local_setup.dsv
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/package.dsv
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/ament_index/resource_index/packages/farm_robot_description
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/cmake/farm_robot_descriptionConfig.cmake
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/cmake/farm_robot_descriptionConfig-version.cmake
+-- Symlinking: /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/package.xml

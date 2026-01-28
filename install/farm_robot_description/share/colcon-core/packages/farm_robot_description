@@ -1,1 +1,1 @@
-gazebo_ros:robot_state_publisher:ros2launch:xacro
+gazebo_msgs:gazebo_ros:rclpy:robot_state_publisher:ros2launch:xacro

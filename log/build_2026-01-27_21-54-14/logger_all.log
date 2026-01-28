@@ -1,0 +1,313 @@
+[0.372s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.372s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x76bdb05a3c70>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x76bdb05a3550>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x76bdb05a3550>>, mixin_verb=('build',))
+[0.984s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.984s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.984s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.984s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.984s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.984s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.984s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rutha/Projects/class_projects/robotics_final'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_bringup) by extension 'ignore'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_bringup) by extension 'ignore_ament_install'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_bringup) by extensions ['colcon_pkg']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_bringup) by extension 'colcon_pkg'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_bringup) by extensions ['colcon_meta']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_bringup) by extension 'colcon_meta'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_bringup) by extensions ['ros']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_bringup) by extension 'ros'
+[1.047s] DEBUG:colcon.colcon_core.package_identification:Package 'src/farm_robot_bringup' with type 'ros.ament_python' and name 'farm_robot_bringup'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_description) by extensions ['ignore', 'ignore_ament_install']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_description) by extension 'ignore'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_description) by extension 'ignore_ament_install'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_description) by extensions ['colcon_pkg']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_description) by extension 'colcon_pkg'
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_description) by extensions ['colcon_meta']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_description) by extension 'colcon_meta'
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_description) by extensions ['ros']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_description) by extension 'ros'
+[1.052s] DEBUG:colcon.colcon_core.package_identification:Package 'src/farm_robot_description' with type 'ros.ament_cmake' and name 'farm_robot_description'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_navigation) by extension 'ignore'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_navigation) by extension 'ignore_ament_install'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_navigation) by extensions ['colcon_pkg']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_navigation) by extension 'colcon_pkg'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_navigation) by extensions ['colcon_meta']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_navigation) by extension 'colcon_meta'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_navigation) by extensions ['ros']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_navigation) by extension 'ros'
+[1.055s] DEBUG:colcon.colcon_core.package_identification:Package 'src/farm_robot_navigation' with type 'ros.ament_cmake' and name 'farm_robot_navigation'
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_perception) by extensions ['ignore', 'ignore_ament_install']
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_perception) by extension 'ignore'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_perception) by extension 'ignore_ament_install'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_perception) by extensions ['colcon_pkg']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_perception) by extension 'colcon_pkg'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_perception) by extensions ['colcon_meta']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_perception) by extension 'colcon_meta'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_perception) by extensions ['ros']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot_perception) by extension 'ros'
+[1.059s] DEBUG:colcon.colcon_core.package_identification:Package 'src/farm_robot_perception' with type 'ros.ament_python' and name 'farm_robot_perception'
+[1.059s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.059s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.059s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.059s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.059s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.131s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 16 installed packages in /home/rutha/ros2_ws/install
+[1.132s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/rutha/ros2_ws/src/install
+[1.133s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/rutha/ros2_ws/task/catkin_ws/install
+[1.143s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 416 installed packages in /opt/ros/humble
+[1.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.304s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_description' build argument 'cmake_args' from command line to 'None'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_description' build argument 'cmake_target' from command line to 'None'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.305s] DEBUG:colcon.colcon_core.verb:Building package 'farm_robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description', 'merge_install': False, 'path': '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_description', 'symlink_install': True, 'test_result_base': None}
+[1.306s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_navigation' build argument 'cmake_args' from command line to 'None'
+[1.306s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_navigation' build argument 'cmake_target' from command line to 'None'
+[1.306s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.307s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[1.307s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[1.307s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[1.307s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[1.307s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[1.307s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.307s] DEBUG:colcon.colcon_core.verb:Building package 'farm_robot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation', 'merge_install': False, 'path': '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_navigation', 'symlink_install': True, 'test_result_base': None}
+[1.308s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_perception' build argument 'cmake_args' from command line to 'None'
+[1.308s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_perception' build argument 'cmake_target' from command line to 'None'
+[1.308s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.308s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[1.308s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_perception' build argument 'cmake_clean_first' from command line to 'False'
+[1.308s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_perception' build argument 'cmake_force_configure' from command line to 'False'
+[1.308s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_perception' build argument 'ament_cmake_args' from command line to 'None'
+[1.308s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[1.308s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.308s] DEBUG:colcon.colcon_core.verb:Building package 'farm_robot_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception', 'merge_install': False, 'path': '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_perception', 'symlink_install': True, 'test_result_base': None}
+[1.309s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_bringup' build argument 'cmake_args' from command line to 'None'
+[1.309s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_bringup' build argument 'cmake_target' from command line to 'None'
+[1.309s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.310s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.310s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.310s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.310s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.310s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.310s] Level 5:colcon.colcon_core.verb:set package 'farm_robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.310s] DEBUG:colcon.colcon_core.verb:Building package 'farm_robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup', 'merge_install': False, 'path': '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_bringup', 'symlink_install': True, 'test_result_base': None}
+[1.310s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.312s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.313s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_description' with build type 'ament_cmake'
+[1.313s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_description'
+[1.323s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.323s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.323s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.337s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_navigation' with build type 'ament_cmake'
+[1.337s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_navigation'
+[1.337s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.338s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.362s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_perception' with build type 'ament_python'
+[1.364s] Level 1:colcon.colcon_core.shell:create_environment_hook('farm_robot_perception', 'ament_prefix_path')
+[1.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception/hook/ament_prefix_path.ps1'
+[1.370s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception/hook/ament_prefix_path.dsv'
+[1.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception/hook/ament_prefix_path.sh'
+[1.376s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.376s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.408s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_description': CMAKE_PREFIX_PATH=/home/rutha/ros2_ws/install/urdf_learning:/home/rutha/ros2_ws/install/tutorial_interfaces:/home/rutha/ros2_ws/install/sync_async_node_example_cpp:/home/rutha/ros2_ws/install/more_interfaces:/home/rutha/ros2_ws/install/learning_tf2_cpp:/home/rutha/ros2_ws/install/py_pubsub:/home/rutha/ros2_ws/install/robot_perception_pkg:/home/rutha/ros2_ws/install/python_parameters:/home/rutha/ros2_ws/install/py_srvcli:/home/rutha/ros2_ws/install/py_intermediate:/home/rutha/ros2_ws/install/my_package:/home/rutha/ros2_ws/install/my_intermediate_pkg:/home/rutha/ros2_ws/install/my_first_pkg:/home/rutha/ros2_ws/install/learning_tf2_py:/home/rutha/ros2_ws/install/bag_recorder_nodes_py:/home/rutha/ros2_ws/src/install/robot_perception_pkg:/home/rutha/ros2_ws/src/install/bag_recorder_nodes_py:/opt/ros/humble:/home/rutha/ros2_ws/install/action_tutorials_interfaces:/home/rutha/ros2_ws/task/catkin_ws/install/robot_perception_pkg /usr/bin/cmake --build /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_description -- -j4 -l4
+[1.432s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation': CMAKE_PREFIX_PATH=/home/rutha/ros2_ws/install/urdf_learning:/home/rutha/ros2_ws/install/tutorial_interfaces:/home/rutha/ros2_ws/install/sync_async_node_example_cpp:/home/rutha/ros2_ws/install/more_interfaces:/home/rutha/ros2_ws/install/learning_tf2_cpp:/home/rutha/ros2_ws/install/py_pubsub:/home/rutha/ros2_ws/install/robot_perception_pkg:/home/rutha/ros2_ws/install/python_parameters:/home/rutha/ros2_ws/install/py_srvcli:/home/rutha/ros2_ws/install/py_intermediate:/home/rutha/ros2_ws/install/my_package:/home/rutha/ros2_ws/install/my_intermediate_pkg:/home/rutha/ros2_ws/install/my_first_pkg:/home/rutha/ros2_ws/install/learning_tf2_py:/home/rutha/ros2_ws/install/bag_recorder_nodes_py:/home/rutha/ros2_ws/src/install/robot_perception_pkg:/home/rutha/ros2_ws/src/install/bag_recorder_nodes_py:/opt/ros/humble:/home/rutha/ros2_ws/install/action_tutorials_interfaces:/home/rutha/ros2_ws/task/catkin_ws/install/robot_perception_pkg /usr/bin/cmake --build /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation -- -j4 -l4
+[2.419s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_perception'
+[2.420s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.420s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.457s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_description' returned '0': CMAKE_PREFIX_PATH=/home/rutha/ros2_ws/install/urdf_learning:/home/rutha/ros2_ws/install/tutorial_interfaces:/home/rutha/ros2_ws/install/sync_async_node_example_cpp:/home/rutha/ros2_ws/install/more_interfaces:/home/rutha/ros2_ws/install/learning_tf2_cpp:/home/rutha/ros2_ws/install/py_pubsub:/home/rutha/ros2_ws/install/robot_perception_pkg:/home/rutha/ros2_ws/install/python_parameters:/home/rutha/ros2_ws/install/py_srvcli:/home/rutha/ros2_ws/install/py_intermediate:/home/rutha/ros2_ws/install/my_package:/home/rutha/ros2_ws/install/my_intermediate_pkg:/home/rutha/ros2_ws/install/my_first_pkg:/home/rutha/ros2_ws/install/learning_tf2_py:/home/rutha/ros2_ws/install/bag_recorder_nodes_py:/home/rutha/ros2_ws/src/install/robot_perception_pkg:/home/rutha/ros2_ws/src/install/bag_recorder_nodes_py:/opt/ros/humble:/home/rutha/ros2_ws/install/action_tutorials_interfaces:/home/rutha/ros2_ws/task/catkin_ws/install/robot_perception_pkg /usr/bin/cmake --build /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_description -- -j4 -l4
+[2.504s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_description': CMAKE_PREFIX_PATH=/home/rutha/ros2_ws/install/urdf_learning:/home/rutha/ros2_ws/install/tutorial_interfaces:/home/rutha/ros2_ws/install/sync_async_node_example_cpp:/home/rutha/ros2_ws/install/more_interfaces:/home/rutha/ros2_ws/install/learning_tf2_cpp:/home/rutha/ros2_ws/install/py_pubsub:/home/rutha/ros2_ws/install/robot_perception_pkg:/home/rutha/ros2_ws/install/python_parameters:/home/rutha/ros2_ws/install/py_srvcli:/home/rutha/ros2_ws/install/py_intermediate:/home/rutha/ros2_ws/install/my_package:/home/rutha/ros2_ws/install/my_intermediate_pkg:/home/rutha/ros2_ws/install/my_first_pkg:/home/rutha/ros2_ws/install/learning_tf2_py:/home/rutha/ros2_ws/install/bag_recorder_nodes_py:/home/rutha/ros2_ws/src/install/robot_perception_pkg:/home/rutha/ros2_ws/src/install/bag_recorder_nodes_py:/opt/ros/humble:/home/rutha/ros2_ws/install/action_tutorials_interfaces:/home/rutha/ros2_ws/task/catkin_ws/install/robot_perception_pkg /usr/bin/cmake --install /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_description
+[2.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation' returned '0': CMAKE_PREFIX_PATH=/home/rutha/ros2_ws/install/urdf_learning:/home/rutha/ros2_ws/install/tutorial_interfaces:/home/rutha/ros2_ws/install/sync_async_node_example_cpp:/home/rutha/ros2_ws/install/more_interfaces:/home/rutha/ros2_ws/install/learning_tf2_cpp:/home/rutha/ros2_ws/install/py_pubsub:/home/rutha/ros2_ws/install/robot_perception_pkg:/home/rutha/ros2_ws/install/python_parameters:/home/rutha/ros2_ws/install/py_srvcli:/home/rutha/ros2_ws/install/py_intermediate:/home/rutha/ros2_ws/install/my_package:/home/rutha/ros2_ws/install/my_intermediate_pkg:/home/rutha/ros2_ws/install/my_first_pkg:/home/rutha/ros2_ws/install/learning_tf2_py:/home/rutha/ros2_ws/install/bag_recorder_nodes_py:/home/rutha/ros2_ws/src/install/robot_perception_pkg:/home/rutha/ros2_ws/src/install/bag_recorder_nodes_py:/opt/ros/humble:/home/rutha/ros2_ws/install/action_tutorials_interfaces:/home/rutha/ros2_ws/task/catkin_ws/install/robot_perception_pkg /usr/bin/cmake --build /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation -- -j4 -l4
+[2.514s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation': CMAKE_PREFIX_PATH=/home/rutha/ros2_ws/install/urdf_learning:/home/rutha/ros2_ws/install/tutorial_interfaces:/home/rutha/ros2_ws/install/sync_async_node_example_cpp:/home/rutha/ros2_ws/install/more_interfaces:/home/rutha/ros2_ws/install/learning_tf2_cpp:/home/rutha/ros2_ws/install/py_pubsub:/home/rutha/ros2_ws/install/robot_perception_pkg:/home/rutha/ros2_ws/install/python_parameters:/home/rutha/ros2_ws/install/py_srvcli:/home/rutha/ros2_ws/install/py_intermediate:/home/rutha/ros2_ws/install/my_package:/home/rutha/ros2_ws/install/my_intermediate_pkg:/home/rutha/ros2_ws/install/my_first_pkg:/home/rutha/ros2_ws/install/learning_tf2_py:/home/rutha/ros2_ws/install/bag_recorder_nodes_py:/home/rutha/ros2_ws/src/install/robot_perception_pkg:/home/rutha/ros2_ws/src/install/bag_recorder_nodes_py:/opt/ros/humble:/home/rutha/ros2_ws/install/action_tutorials_interfaces:/home/rutha/ros2_ws/task/catkin_ws/install/robot_perception_pkg /usr/bin/cmake --install /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation
+[2.612s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farm_robot_description)
+[2.614s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_description' returned '0': CMAKE_PREFIX_PATH=/home/rutha/ros2_ws/install/urdf_learning:/home/rutha/ros2_ws/install/tutorial_interfaces:/home/rutha/ros2_ws/install/sync_async_node_example_cpp:/home/rutha/ros2_ws/install/more_interfaces:/home/rutha/ros2_ws/install/learning_tf2_cpp:/home/rutha/ros2_ws/install/py_pubsub:/home/rutha/ros2_ws/install/robot_perception_pkg:/home/rutha/ros2_ws/install/python_parameters:/home/rutha/ros2_ws/install/py_srvcli:/home/rutha/ros2_ws/install/py_intermediate:/home/rutha/ros2_ws/install/my_package:/home/rutha/ros2_ws/install/my_intermediate_pkg:/home/rutha/ros2_ws/install/my_first_pkg:/home/rutha/ros2_ws/install/learning_tf2_py:/home/rutha/ros2_ws/install/bag_recorder_nodes_py:/home/rutha/ros2_ws/src/install/robot_perception_pkg:/home/rutha/ros2_ws/src/install/bag_recorder_nodes_py:/opt/ros/humble:/home/rutha/ros2_ws/install/action_tutorials_interfaces:/home/rutha/ros2_ws/task/catkin_ws/install/robot_perception_pkg /usr/bin/cmake --install /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_description
+[2.622s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description' for CMake module files
+[2.628s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description' for CMake config files
+[2.633s] Level 1:colcon.colcon_core.shell:create_environment_hook('farm_robot_description', 'cmake_prefix_path')
+[2.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/hook/cmake_prefix_path.ps1'
+[2.635s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/hook/cmake_prefix_path.dsv'
+[2.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/hook/cmake_prefix_path.sh'
+[2.639s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/lib'
+[2.640s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/bin'
+[2.640s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/lib/pkgconfig/farm_robot_description.pc'
+[2.641s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/lib/python3.10/site-packages'
+[2.643s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/bin'
+[2.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/package.ps1'
+[2.647s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/package.dsv'
+[2.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/package.sh'
+[2.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/package.bash'
+[2.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/package.zsh'
+[2.653s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/colcon-core/packages/farm_robot_description)
+[2.655s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farm_robot_description)
+[2.655s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description' for CMake module files
+[2.657s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description' for CMake config files
+[2.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('farm_robot_description', 'cmake_prefix_path')
+[2.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/hook/cmake_prefix_path.ps1'
+[2.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/hook/cmake_prefix_path.dsv'
+[2.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/hook/cmake_prefix_path.sh'
+[2.664s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/lib'
+[2.664s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/bin'
+[2.665s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/lib/pkgconfig/farm_robot_description.pc'
+[2.665s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/lib/python3.10/site-packages'
+[2.666s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/bin'
+[2.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/package.ps1'
+[2.669s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/package.dsv'
+[2.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/package.sh'
+[2.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/package.bash'
+[2.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/package.zsh'
+[2.675s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/colcon-core/packages/farm_robot_description)
+[2.677s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farm_robot_navigation)
+[2.678s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation' for CMake module files
+[2.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation' returned '0': CMAKE_PREFIX_PATH=/home/rutha/ros2_ws/install/urdf_learning:/home/rutha/ros2_ws/install/tutorial_interfaces:/home/rutha/ros2_ws/install/sync_async_node_example_cpp:/home/rutha/ros2_ws/install/more_interfaces:/home/rutha/ros2_ws/install/learning_tf2_cpp:/home/rutha/ros2_ws/install/py_pubsub:/home/rutha/ros2_ws/install/robot_perception_pkg:/home/rutha/ros2_ws/install/python_parameters:/home/rutha/ros2_ws/install/py_srvcli:/home/rutha/ros2_ws/install/py_intermediate:/home/rutha/ros2_ws/install/my_package:/home/rutha/ros2_ws/install/my_intermediate_pkg:/home/rutha/ros2_ws/install/my_first_pkg:/home/rutha/ros2_ws/install/learning_tf2_py:/home/rutha/ros2_ws/install/bag_recorder_nodes_py:/home/rutha/ros2_ws/src/install/robot_perception_pkg:/home/rutha/ros2_ws/src/install/bag_recorder_nodes_py:/opt/ros/humble:/home/rutha/ros2_ws/install/action_tutorials_interfaces:/home/rutha/ros2_ws/task/catkin_ws/install/robot_perception_pkg /usr/bin/cmake --install /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_navigation
+[2.686s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation' for CMake config files
+[2.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('farm_robot_navigation', 'cmake_prefix_path')
+[2.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/hook/cmake_prefix_path.ps1'
+[2.689s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/hook/cmake_prefix_path.dsv'
+[2.692s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/hook/cmake_prefix_path.sh'
+[2.693s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/bin'
+[2.693s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/lib/pkgconfig/farm_robot_navigation.pc'
+[2.694s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/lib/python3.10/site-packages'
+[2.695s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/bin'
+[2.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/package.ps1'
+[2.698s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/package.dsv'
+[2.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/package.sh'
+[2.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/package.bash'
+[2.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/package.zsh'
+[2.705s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/colcon-core/packages/farm_robot_navigation)
+[2.708s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farm_robot_navigation)
+[2.709s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation' for CMake module files
+[2.710s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation' for CMake config files
+[2.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('farm_robot_navigation', 'cmake_prefix_path')
+[2.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/hook/cmake_prefix_path.ps1'
+[2.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/hook/cmake_prefix_path.dsv'
+[2.716s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/hook/cmake_prefix_path.sh'
+[2.717s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/bin'
+[2.717s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/lib/pkgconfig/farm_robot_navigation.pc'
+[2.718s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/lib/python3.10/site-packages'
+[2.718s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/bin'
+[2.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/package.ps1'
+[2.723s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/package.dsv'
+[2.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/package.sh'
+[2.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/package.bash'
+[2.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/farm_robot_navigation/package.zsh'
+[2.730s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation/share/colcon-core/packages/farm_robot_navigation)
+[3.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception': PYTHONPATH=/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/build --no-deps symlink_data
+[5.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('farm_robot_perception', 'pythonpath_develop')
+[5.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/share/farm_robot_perception/hook/pythonpath_develop.ps1'
+[5.393s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/share/farm_robot_perception/hook/pythonpath_develop.dsv'
+[5.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/share/farm_robot_perception/hook/pythonpath_develop.sh'
+[5.398s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception' for CMake module files
+[5.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception' returned '0': PYTHONPATH=/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception/build --no-deps symlink_data
+[5.403s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception' for CMake config files
+[5.405s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib'
+[5.406s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/bin'
+[5.406s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/pkgconfig/farm_robot_perception.pc'
+[5.406s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages'
+[5.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('farm_robot_perception', 'pythonpath')
+[5.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception/hook/pythonpath.ps1'
+[5.409s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception/hook/pythonpath.dsv'
+[5.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception/hook/pythonpath.sh'
+[5.413s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/bin'
+[5.414s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farm_robot_perception)
+[5.415s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception/package.ps1'
+[5.416s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception/package.dsv'
+[5.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception/package.sh'
+[5.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception/package.bash'
+[5.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/farm_robot_perception/package.zsh'
+[5.426s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/share/colcon-core/packages/farm_robot_perception)
+[5.427s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_bringup' with build type 'ament_python'
+[5.428s] Level 1:colcon.colcon_core.shell:create_environment_hook('farm_robot_bringup', 'ament_prefix_path')
+[5.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup/hook/ament_prefix_path.ps1'
+[5.430s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup/hook/ament_prefix_path.dsv'
+[5.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup/hook/ament_prefix_path.sh'
+[5.431s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.431s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.381s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_bringup'
+[6.382s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.382s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup': AMENT_PREFIX_PATH=/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/lib/python3.10/site-packages:/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup/build --no-deps symlink_data
+[9.484s] Level 1:colcon.colcon_core.shell:create_environment_hook('farm_robot_bringup', 'pythonpath_develop')
+[9.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup/share/farm_robot_bringup/hook/pythonpath_develop.ps1'
+[9.488s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup' returned '0': AMENT_PREFIX_PATH=/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_navigation:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/lib/python3.10/site-packages:/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_perception:/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup/build --no-deps symlink_data
+[9.488s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup/share/farm_robot_bringup/hook/pythonpath_develop.dsv'
+[9.489s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/build/farm_robot_bringup/share/farm_robot_bringup/hook/pythonpath_develop.sh'
+[9.490s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup' for CMake module files
+[9.491s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup' for CMake config files
+[9.492s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/lib'
+[9.492s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/bin'
+[9.492s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/lib/pkgconfig/farm_robot_bringup.pc'
+[9.493s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/lib/python3.10/site-packages'
+[9.493s] Level 1:colcon.colcon_core.shell:create_environment_hook('farm_robot_bringup', 'pythonpath')
+[9.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup/hook/pythonpath.ps1'
+[9.494s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup/hook/pythonpath.dsv'
+[9.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup/hook/pythonpath.sh'
+[9.497s] Level 1:colcon.colcon_core.environment:checking '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/bin'
+[9.497s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farm_robot_bringup)
+[9.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup/package.ps1'
+[9.500s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup/package.dsv'
+[9.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup/package.sh'
+[9.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup/package.bash'
+[9.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/farm_robot_bringup/package.zsh'
+[9.503s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rutha/Projects/class_projects/robotics_final/install/farm_robot_bringup/share/colcon-core/packages/farm_robot_bringup)
+[9.504s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.504s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.505s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.505s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.520s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.520s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.520s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.550s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.550s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rutha/Projects/class_projects/robotics_final/install/local_setup.ps1'
+[9.554s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rutha/Projects/class_projects/robotics_final/install/_local_setup_util_ps1.py'
+[9.565s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rutha/Projects/class_projects/robotics_final/install/setup.ps1'
+[9.570s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rutha/Projects/class_projects/robotics_final/install/local_setup.sh'
+[9.574s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rutha/Projects/class_projects/robotics_final/install/_local_setup_util_sh.py'
+[9.579s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rutha/Projects/class_projects/robotics_final/install/setup.sh'
+[9.586s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rutha/Projects/class_projects/robotics_final/install/local_setup.bash'
+[9.589s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rutha/Projects/class_projects/robotics_final/install/setup.bash'
+[9.595s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rutha/Projects/class_projects/robotics_final/install/local_setup.zsh'
+[9.597s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rutha/Projects/class_projects/robotics_final/install/setup.zsh'

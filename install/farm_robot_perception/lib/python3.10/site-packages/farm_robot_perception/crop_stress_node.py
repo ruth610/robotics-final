@@ -34,8 +34,11 @@ class CropStressNode(Node):
         green_mask = cv2.inRange(hsv, (35, 60, 30), (85, 255, 255))
         green_ratio = float(np.count_nonzero(green_mask)) / float(frame.shape[0] * frame.shape[1])
 
-        # Dryness mask: yellow/brown hues + reasonably saturated
-        dryness_mask = cv2.inRange(hsv, (10, 60, 30), (35, 255, 255))
+        # Dryness mask: yellow/brown hues + high brightness (avoid soil)
+        # Hue: 10-35 (Orange/Yellow)
+        # Sat: > 60
+        # Val: > 120 (Soil is approx 100, this filters it out)
+        dryness_mask = cv2.inRange(hsv, (10, 60, 120), (35, 255, 255))
         dryness_ratio = float(np.count_nonzero(dryness_mask)) / float(frame.shape[0] * frame.shape[1])
 
         # Texture index: variance of Laplacian

@@ -1,0 +1,1 @@
+/home/rutha/Projects/class_projects/robotics_final/src/farm_robot_description/scripts/delete_entity.py

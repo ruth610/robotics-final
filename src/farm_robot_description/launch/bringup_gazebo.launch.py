@@ -1,5 +1,6 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, RegisterEventHandler
+from launch.event_handlers import OnProcessExit
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import Command
 from launch.substitutions import PathJoinSubstitution
@@ -29,6 +30,20 @@ def generate_launch_description():
         parameters=[robot_description, {'use_sim_time': True}]
     )
 
+    # If Gazebo is already running (or you relaunch), delete any existing model
+    # named 'farm_bot' before spawning again.
+    delete_existing = Node(
+        package='farm_robot_description',
+        executable='delete_entity.py',
+        name='delete_entity_once',
+        output='screen',
+        parameters=[{
+            'entity_name': 'farm_bot',
+            'service_name': '/delete_entity',
+            'timeout_sec': 5.0,
+        }]
+    )
+
     spawn = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
@@ -36,8 +51,16 @@ def generate_launch_description():
         output='screen'
     )
 
+    spawn_after_delete = RegisterEventHandler(
+        OnProcessExit(
+            target_action=delete_existing,
+            on_exit=[spawn],
+        )
+    )
+
     return LaunchDescription([
         gazebo,
         rsp,
-        spawn,
+        delete_existing,
+        spawn_after_delete,
     ])

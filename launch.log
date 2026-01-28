@@ -1,0 +1,881 @@
+[INFO] [launch]: All log files can be found below /home/rutha/.ros/log/2026-01-27-22-00-05-878171-Linux-152740
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gzserver-1]: process started with pid [152796]
+[INFO] [gzclient-2]: process started with pid [152798]
+[INFO] [robot_state_publisher-3]: process started with pid [152800]
+[INFO] [delete_entity.py-4]: process started with pid [152802]
+[INFO] [component_container_isolated-5]: process started with pid [152804]
+[INFO] [map_saver_server-6]: process started with pid [152806]
+[INFO] [lifecycle_manager-7]: process started with pid [152808]
+[INFO] [sync_slam_toolbox_node-8]: process started with pid [152810]
+[INFO] [crop_stress_node-9]: process started with pid [152812]
+[lifecycle_manager-7] [INFO] [1769540412.777862683] [lifecycle_manager_slam]: Creating
+[robot_state_publisher-3] [INFO] [1769540412.807609366] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1769540412.807784190] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1769540412.807811824] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1769540412.807833518] [robot_state_publisher]: got segment left_wheel
+[robot_state_publisher-3] [INFO] [1769540412.807854095] [robot_state_publisher]: got segment lidar_link
+[robot_state_publisher-3] [INFO] [1769540412.807872607] [robot_state_publisher]: got segment right_wheel
+[lifecycle_manager-7] [INFO] [1769540412.850641474] [lifecycle_manager_slam]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[map_saver_server-6] [INFO] [1769540412.889319499] [map_saver]: 
+[map_saver_server-6] 	map_saver lifecycle node launched. 
+[map_saver_server-6] 	Waiting on external lifecycle transitions to activate
+[map_saver_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_saver_server-6] [INFO] [1769540412.889501650] [map_saver]: Creating
+[lifecycle_manager-7] [INFO] [1769540412.899732753] [lifecycle_manager_slam]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-7] [INFO] [1769540412.899799296] [lifecycle_manager_slam]: [34m[1mConfiguring map_saver[0m[0m
+[sync_slam_toolbox_node-8] [INFO] [1769540413.323205003] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[lifecycle_manager-7] [ERROR] [1769540413.638104800] [lifecycle_manager_slam]: Failed to change state for node: map_saver
+[lifecycle_manager-7] [ERROR] [1769540413.638450067] [lifecycle_manager_slam]: Failed to bring up all requested nodes. Aborting bringup.
+[sync_slam_toolbox_node-8] [WARN] [1769540413.909211367] [slam_toolbox]: minimum laser range setting (0.0 m) exceeds the capabilities of the used Lidar (0.1 m)
+[sync_slam_toolbox_node-8] [WARN] [1769540413.909511736] [slam_toolbox]: maximum laser range setting (25.0 m) exceeds the capabilities of the used Lidar (10.0 m)
+[sync_slam_toolbox_node-8] Info: clipped range threshold to be within minimum and maximum range!
+[sync_slam_toolbox_node-8] Registering sensor: [Custom Described Lidar]
+[component_container_isolated-5] [INFO] [1769540413.985274184] [nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[component_container_isolated-5] [INFO] [1769540414.084554875] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-5] [INFO] [1769540414.084664378] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-5] [INFO] [1769540414.281018073] [controller_server]: 
+[component_container_isolated-5] 	controller_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540414.407609923] [controller_server]: Creating controller server
+[component_container_isolated-5] [INFO] [1769540414.639953023] [local_costmap.local_costmap]: 
+[component_container_isolated-5] 	local_costmap lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540414.655436640] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1769540414.685570751] [nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[component_container_isolated-5] [INFO] [1769540414.695812195] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-5] [INFO] [1769540414.695898786] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-5] [INFO] [1769540414.823700141] [smoother_server]: 
+[component_container_isolated-5] 	smoother_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540414.847764024] [smoother_server]: Creating smoother server
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1769540414.860317826] [nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[component_container_isolated-5] [INFO] [1769540414.862778165] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-5] [INFO] [1769540414.862833045] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-5] [INFO] [1769540414.942141740] [planner_server]: 
+[component_container_isolated-5] 	planner_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540414.954491845] [planner_server]: Creating
+[component_container_isolated-5] [INFO] [1769540415.175243869] [global_costmap.global_costmap]: 
+[component_container_isolated-5] 	global_costmap lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540415.176685349] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1769540415.262127708] [nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[component_container_isolated-5] [INFO] [1769540415.310391980] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-5] [INFO] [1769540415.310452320] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[INFO] [delete_entity.py-4]: process has finished cleanly [pid 152802]
+[INFO] [spawn_entity.py-10]: process started with pid [152913]
+[component_container_isolated-5] [INFO] [1769540415.433206150] [behavior_server]: 
+[component_container_isolated-5] 	behavior_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1769540415.478604903] [nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[component_container_isolated-5] [INFO] [1769540415.490428087] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-5] [INFO] [1769540415.490485407] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-5] [INFO] [1769540415.552715136] [bt_navigator]: 
+[component_container_isolated-5] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540415.553185041] [bt_navigator]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1769540415.583519318] [nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[component_container_isolated-5] [INFO] [1769540415.587313589] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-5] [INFO] [1769540415.587923299] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-5] [INFO] [1769540415.716101388] [waypoint_follower]: 
+[component_container_isolated-5] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1769540415.721986218] [waypoint_follower]: Creating
+[component_container_isolated-5] [INFO] [1769540415.756315801] [nav2_container]: Load Library: /opt/ros/humble/lib/libvelocity_smoother_core.so
+[component_container_isolated-5] [INFO] [1769540415.771143717] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-5] [INFO] [1769540415.771243504] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1769540416.084584466] [velocity_smoother]: 
+[component_container_isolated-5] 	velocity_smoother lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540416.114594053] [nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[component_container_isolated-5] [INFO] [1769540416.117915113] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-5] [INFO] [1769540416.117978855] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-5] [INFO] [1769540416.621554064] [lifecycle_manager_navigation]: Creating
+[component_container_isolated-5] [INFO] [1769540416.676398326] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1769540416.980382705] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-5] [INFO] [1769540416.980454013] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[component_container_isolated-5] [INFO] [1769540416.981061620] [controller_server]: Configuring controller interface
+[component_container_isolated-5] [INFO] [1769540416.986488029] [controller_server]: getting goal checker plugins..
+[component_container_isolated-5] [INFO] [1769540416.986869402] [controller_server]: Controller frequency set to 20.0000Hz
+[component_container_isolated-5] [INFO] [1769540416.986941548] [local_costmap.local_costmap]: Configuring
+[ERROR] [gzserver-1]: process has died [pid 152796, exit code 255, cmd 'gzserver /home/rutha/Projects/class_projects/robotics_final/install/farm_robot_description/share/farm_robot_description/worlds/farm.world -slibgazebo_ros_init.so -slibgazebo_ros_factory.so -slibgazebo_ros_force_system.so'].
+[component_container_isolated-5] [INFO] [1769540417.076855763] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1769540417.136840926] [local_costmap.local_costmap]: Subscribed to Topics: 
+[component_container_isolated-5] [INFO] [1769540417.137097402] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1769540417.137122603] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1769540417.166063870] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-5] [ERROR] [1769540417.254374058] [lifecycle_manager_navigation]: Failed to change state for node: controller_server
+[component_container_isolated-5] [ERROR] [1769540417.254434052] [lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[component_container_isolated-5] [INFO] [1769540417.416144770] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[component_container_isolated-5] [INFO] [1769540417.450125291] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[component_container_isolated-5] [INFO] [1769540417.490816202] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[component_container_isolated-5] [INFO] [1769540417.508003444] [controller_server]: Created controller : FollowPath of type nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[component_container_isolated-5] [INFO] [1769540417.599881313] [controller_server]: Controller Server has FollowPath  controllers available.
+[spawn_entity.py-10] [INFO] [1769540421.188612699] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-10] [INFO] [1769540421.191327450] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-10] [INFO] [1769540421.198312816] [spawn_entity]: Waiting for entity xml on robot_description
+[spawn_entity.py-10] [INFO] [1769540422.260825912] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-10] [INFO] [1769540422.264242138] [spawn_entity]: Waiting for service /spawn_entity
+[spawn_entity.py-10] [INFO] [1769540422.334308817] [spawn_entity]: Calling service /spawn_entity
+[spawn_entity.py-10] [INFO] [1769540422.651629639] [spawn_entity]: Spawn status: Entity [farm_bot] already exists.
+[spawn_entity.py-10] [ERROR] [1769540422.652562051] [spawn_entity]: Spawn service failed. Exiting.
+[ERROR] [spawn_entity.py-10]: process has died [pid 152913, exit code 1, cmd '/opt/ros/humble/lib/gazebo_ros/spawn_entity.py -entity farm_bot -topic robot_description --ros-args'].
+[component_container_isolated-5] [WARN] [1769540424.371195051] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[component_container_isolated-5] [WARN] [1769540424.371239069] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[component_container_isolated-5] [ERROR] [1769540424.371811395] [controller_server]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[sync_slam_toolbox_node-8] [INFO] [1769540463.507294897] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 89.662 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540476.181654088] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 94.452 for reason 'discarding message because the queue is full'
+[ERROR] [gzclient-2]: process has died [pid 152798, exit code -11, cmd 'gzclient --gui-client-plugin=libgazebo_ros_eol_gui.so'].
+[component_container_isolated-5] [INFO] [1769540481.460372425] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[sync_slam_toolbox_node-8] [INFO] [1769540482.171476238] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 97.704 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540491.765942616] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 105.428 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540507.990487002] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 118.033 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [INFO] [1769540511.693314581] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[sync_slam_toolbox_node-8] [INFO] [1769540512.527099479] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 122.037 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540516.380350656] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 125.438 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540520.443435869] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 129.043 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540523.317363309] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 131.545 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540526.181067710] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 134.046 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540532.386831757] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 139.448 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540537.930787343] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 144.057 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540554.919342378] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 158.776 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540557.762584172] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 161.281 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540560.859378970] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 163.887 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540570.677397092] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 172.593 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540574.777861980] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 176.198 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540579.854097944] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 180.598 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540587.864351276] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 187.415 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540593.979253887] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 192.228 for reason 'discarding message because the queue is full'
+[sync_slam_toolbox_node-8] [INFO] [1769540598.086588051] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 195.639 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [INFO] [1769540615.204134731] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-5] [INFO] [1769540615.204274258] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-5] [WARN] [1769540615.210791785] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540615.502933286] [controller_server]: 
+[component_container_isolated-5] 	controller_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540615.783687124] [controller_server]: Creating controller server
+[component_container_isolated-5] [WARN] [1769540615.977814848] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[sync_slam_toolbox_node-8] [INFO] [1769540616.776430013] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 209.108 for reason 'discarding message because the queue is full'
+[map_saver_server-6] [INFO] [1769540616.829645688] [map_saver]: Configuring
+[component_container_isolated-5] [INFO] [1769540619.686235427] [local_costmap.local_costmap]: 
+[component_container_isolated-5] 	local_costmap lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540619.751961031] [local_costmap.local_costmap]: Creating Costmap
+[component_container_isolated-5] [INFO] [1769540619.802363959] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-5] [INFO] [1769540619.802430983] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-5] [WARN] [1769540619.808710068] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540620.058795716] [smoother_server]: 
+[component_container_isolated-5] 	smoother_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540620.209548208] [smoother_server]: Creating smoother server
+[component_container_isolated-5] [INFO] [1769540620.263091360] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-5] [INFO] [1769540620.263165124] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-5] [WARN] [1769540620.280942281] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540621.099970886] [planner_server]: 
+[component_container_isolated-5] 	planner_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540621.165037602] [planner_server]: Creating
+[component_container_isolated-5] [WARN] [1769540621.187898467] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540621.450410318] [global_costmap.global_costmap]: 
+[component_container_isolated-5] 	global_costmap lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540621.459838752] [global_costmap.global_costmap]: Creating Costmap
+[component_container_isolated-5] [INFO] [1769540621.700635083] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-5] [INFO] [1769540621.700715942] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-5] [WARN] [1769540621.709088404] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540622.373800473] [behavior_server]: 
+[component_container_isolated-5] 	behavior_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540622.785439322] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-5] [INFO] [1769540622.785503911] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-5] [WARN] [1769540622.790415130] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540623.705416551] [bt_navigator]: 
+[component_container_isolated-5] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540623.705496320] [bt_navigator]: Creating
+[component_container_isolated-5] [INFO] [1769540623.744420362] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-5] [INFO] [1769540623.744474748] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-5] [WARN] [1769540623.744741174] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540624.918297623] [waypoint_follower]: 
+[component_container_isolated-5] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540625.131245788] [waypoint_follower]: Creating
+[component_container_isolated-5] [INFO] [1769540625.213475901] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-5] [INFO] [1769540625.213530333] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-5] [WARN] [1769540625.223032144] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [WARN] [1769540626.484024011] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[component_container_isolated-5] [WARN] [1769540626.484078274] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[component_container_isolated-5] [ERROR] [1769540626.484124651] [controller_server]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [INFO] [1769540626.485720151] [controller_server]: Configuring controller interface
+[component_container_isolated-5] [INFO] [1769540626.491810080] [controller_server]: getting goal checker plugins..
+[component_container_isolated-5] [INFO] [1769540626.495944665] [controller_server]: Controller frequency set to 20.0000Hz
+[component_container_isolated-5] [INFO] [1769540626.496689897] [local_costmap.local_costmap]: Configuring
+[component_container_isolated-5] [INFO] [1769540627.081712034] [smoother_server]: Configuring smoother server
+[component_container_isolated-5] [INFO] [1769540627.082034244] [smoother_server]: Configuring smoother server
+[component_container_isolated-5] [INFO] [1769540627.785393123] [velocity_smoother]: 
+[component_container_isolated-5] 	velocity_smoother lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540628.623124632] [planner_server]: Configuring
+[component_container_isolated-5] [INFO] [1769540628.627088251] [planner_server]: Configuring
+[component_container_isolated-5] [INFO] [1769540628.713869404] [global_costmap.global_costmap]: Configuring
+[component_container_isolated-5] [INFO] [1769540628.713875522] [global_costmap.global_costmap]: Configuring
+[component_container_isolated-5] [INFO] [1769540628.664198904] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1769540628.865883719] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-5] [INFO] [1769540629.359868999] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-5] [INFO] [1769540629.079301222] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-5] [INFO] [1769540629.099897126] [local_costmap.local_costmap]: Subscribed to Topics: 
+[component_container_isolated-5] [WARN] [1769540629.669529416] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540629.670474651] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1769540629.670542951] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1769540629.735820308] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[component_container_isolated-5] [INFO] [1769540629.780765847] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1769540630.258933322] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-5] [INFO] [1769540630.306504571] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[component_container_isolated-5] [INFO] [1769540630.888165544] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1769540631.203053420] [global_costmap.global_costmap]: Subscribed to Topics: 
+[component_container_isolated-5] [INFO] [1769540631.203188011] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1769540631.203215603] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1769540631.214356058] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1769540631.496000289] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1769540631.612412631] [behavior_server]: Configuring
+[component_container_isolated-5] [INFO] [1769540631.614078621] [behavior_server]: Configuring
+[component_container_isolated-5] [INFO] [1769540632.154539586] [global_costmap.global_costmap]: Subscribed to Topics: 
+[component_container_isolated-5] [INFO] [1769540634.318864712] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1769540634.320707047] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1769540634.408605667] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1769540648.355053523] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[component_container_isolated-5] [INFO] [1769540648.639909517] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[map_saver_server-6] [WARN] [1769540666.386675922] [rcl_lifecycle]: No transition matching 4 found for current state inactive
+[map_saver_server-6] [WARN] [1769540666.510254317] [rcl_lifecycle]: No transition matching 4 found for current state inactive
+[map_saver_server-6] [ERROR] [1769540666.872963714] [map_saver]: Unable to start transition 4 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[map_saver_server-6] [INFO] [1769540670.710997171] [map_saver]: Cleaning up
+[component_container_isolated-5] [INFO] [1769540766.880389461] [behavior_server]: Configuring spin
+[component_container_isolated-5] [FATAL] [1769540770.615693336] [behavior_server]: Failed to create behavior spin of type nav2_behaviors/Spin. Exception: MultiLibraryClassLoader: Could not create object of class type nav2_behaviors::Spin as no factory exists for it. Make sure that the library exists and was explicitly loaded through MultiLibraryClassLoader::loadLibrary()
+[map_saver_server-6] [INFO] [1769540928.610201914] [map_saver]: Configuring
+[map_saver_server-6] [WARN] [1769540930.433491207] [map_saver.rclcpp]: failed to send response to /map_saver/change_state (timeout): client will not receive response, at ./src/rmw_response.cpp:154, at ./src/rcl/service.c:314
+[map_saver_server-6] [WARN] [1769540930.542976790] [map_saver.rclcpp]: failed to send response to /map_saver/get_state (timeout): client will not receive response, at ./src/rmw_response.cpp:154, at ./src/rcl/service.c:314
+[map_saver_server-6] [WARN] [1769540930.650861972] [map_saver.rclcpp]: failed to send response to /map_saver/get_state (timeout): client will not receive response, at ./src/rmw_response.cpp:154, at ./src/rcl/service.c:314
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    [component_container_isolated-5] [WARN] [1769540404.426797772] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540405.426973898] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540406.427003798] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540407.426914701] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540408.426784997] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540409.426957201] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540410.426846211] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540411.429997664] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540412.428483792] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540413.426789564] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[map_saver_server-6] [WARN] [1769540413.631356875] [rcl_lifecycle]: No transition matching 1 found for current state active
+[map_saver_server-6] [WARN] [1769540413.631405593] [rcl_lifecycle]: No transition matching 1 found for current state active
+[map_saver_server-6] [ERROR] [1769540413.631439531] [map_saver]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [INFO] [1769540413.986460935] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-5] [INFO] [1769540413.986560860] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-5] [WARN] [1769540414.006400043] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [WARN] [1769540414.427992466] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540415.372876174] [controller_server]: 
+[component_container_isolated-5] 	controller_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [WARN] [1769540415.433644974] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540415.485841985] [controller_server]: Creating controller server
+[component_container_isolated-5] [WARN] [1769540415.496311287] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [WARN] [1769540416.426752322] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540416.601057404] [local_costmap.local_costmap]: 
+[component_container_isolated-5] 	local_costmap lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540416.617075241] [local_costmap.local_costmap]: Creating Costmap
+[component_container_isolated-5] [INFO] [1769540416.721570731] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-5] [INFO] [1769540416.721627395] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-5] [WARN] [1769540416.725070160] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540417.111880867] [controller_server]: Configuring controller interface
+[component_container_isolated-5] [INFO] [1769540417.112428731] [controller_server]: getting goal checker plugins..
+[component_container_isolated-5] [WARN] [1769540417.114974606] [rcl_lifecycle]: No transition matching 1 found for current state active
+[component_container_isolated-5] [WARN] [1769540417.115001075] [rcl_lifecycle]: No transition matching 1 found for current state active
+[component_container_isolated-5] [ERROR] [1769540417.115016559] [controller_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [INFO] [1769540417.128014222] [controller_server]: Controller frequency set to 20.0000Hz
+[component_container_isolated-5] [INFO] [1769540417.128137358] [local_costmap.local_costmap]: Configuring
+[component_container_isolated-5] [INFO] [1769540417.296553232] [smoother_server]: 
+[component_container_isolated-5] 	smoother_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540417.324510716] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1769540417.356444066] [local_costmap.local_costmap]: Subscribed to Topics: 
+[component_container_isolated-5] [INFO] [1769540417.356540172] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1769540417.356564944] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1769540417.382383431] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1769540417.384044142] [smoother_server]: Creating smoother server
+[component_container_isolated-5] [INFO] [1769540417.405827633] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-5] [INFO] [1769540417.405906385] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-5] [WARN] [1769540417.410410019] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [WARN] [1769540417.428124329] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540417.960550127] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[component_container_isolated-5] [INFO] [1769540417.989167344] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[component_container_isolated-5] [INFO] [1769540418.005281779] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[component_container_isolated-5] [INFO] [1769540418.005780677] [controller_server]: Created controller : FollowPath of type nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[component_container_isolated-5] [INFO] [1769540418.195297888] [planner_server]: 
+[component_container_isolated-5] 	planner_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540418.241936856] [controller_server]: Controller Server has FollowPath  controllers available.
+[component_container_isolated-5] [INFO] [1769540418.260738837] [planner_server]: Creating
+[component_container_isolated-5] [WARN] [1769540418.282914976] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [WARN] [1769540418.426830668] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540418.781349148] [global_costmap.global_costmap]: 
+[component_container_isolated-5] 	global_costmap lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540418.791769932] [global_costmap.global_costmap]: Creating Costmap
+[component_container_isolated-5] [INFO] [1769540418.889092849] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-5] [INFO] [1769540418.889149113] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-5] [WARN] [1769540418.893651597] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540419.388825258] [behavior_server]: 
+[component_container_isolated-5] 	behavior_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [WARN] [1769540419.426796766] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540419.439376514] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-5] [INFO] [1769540419.439425841] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-5] [WARN] [1769540419.439810212] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [WARN] [1769540420.426791497] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540421.434019462] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540422.426848688] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540422.758194269] [bt_navigator]: 
+[component_container_isolated-5] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540422.758724846] [bt_navigator]: Creating
+[component_container_isolated-5] [INFO] [1769540422.857625201] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-5] [INFO] [1769540422.857677605] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-5] [WARN] [1769540422.867548160] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540423.347586838] [waypoint_follower]: 
+[component_container_isolated-5] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540423.402052867] [waypoint_follower]: Creating
+[component_container_isolated-5] [WARN] [1769540423.426973831] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540423.433077738] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-5] [INFO] [1769540423.433133288] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-5] [WARN] [1769540423.436382152] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540423.805159082] [velocity_smoother]: 
+[component_container_isolated-5] 	velocity_smoother lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1769540423.811078155] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-5] [INFO] [1769540423.811185665] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-5] [WARN] [1769540423.823083435] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540423.942718044] [lifecycle_manager_navigation]: Creating
+[component_container_isolated-5] [INFO] [1769540423.997501834] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[component_container_isolated-5] [INFO] [1769540424.370335828] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-5] [INFO] [1769540424.370411052] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[component_container_isolated-5] [WARN] [1769540424.370873657] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[component_container_isolated-5] [WARN] [1769540424.370892170] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[component_container_isolated-5] [ERROR] [1769540424.370906656] [controller_server]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [WARN] [1769540424.370981247] [rcl_lifecycle]: No transition matching 1 found for current state active
+[component_container_isolated-5] [WARN] [1769540424.371032684] [rcl_lifecycle]: No transition matching 1 found for current state active
+[component_container_isolated-5] [ERROR] [1769540424.371045844] [controller_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [ERROR] [1769540424.375503532] [lifecycle_manager_navigation]: Failed to change state for node: controller_server
+[component_container_isolated-5] [ERROR] [1769540424.375710792] [lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[component_container_isolated-5] [WARN] [1769540424.427545061] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540425.428008577] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540426.426783061] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540427.426785988] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540428.426785095] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540429.426793633] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540430.426802389] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540431.426820216] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540432.457379176] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540433.443164416] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540434.459392440] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540435.438331119] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540436.448140795] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540437.442994831] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540438.437173699] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540439.448286746] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540440.502260141] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540441.520297356] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540442.456522717] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540443.434452733] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540444.550066999] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540445.453407844] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540446.460848758] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540447.441354182] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540448.477489926] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540449.315067359] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 86.091 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540449.437641659] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540450.498462329] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540451.492514753] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540452.496759945] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540453.507221875] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540454.479375613] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540455.485810420] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540456.471311067] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540457.543031436] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540458.469659809] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540459.483190990] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540460.427690596] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540461.435456524] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540462.465894282] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540463.436686597] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540464.441996958] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540465.431038274] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540466.470114727] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540467.438843156] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540468.459196899] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540469.432779620] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540470.442904920] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540471.483588287] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540472.446312417] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540473.489513599] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540474.429682435] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540475.427758650] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540476.183147280] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 94.452 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540476.426789368] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540477.426797600] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540478.428102229] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540479.427511062] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540480.428662437] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540480.701943262] [bt_navigator]: Begin navigating from current location (-0.00, -0.00) to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540480.728695964] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540480.730181445] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [ERROR] [1769540480.733977340] [planner_server]: worldToMap failed: mx,my: 500,500, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540480.734097196] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540480.734121656] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540480.734143150] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540480.734161370] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540480.755320788] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-5] [WARN] [1769540480.759622340] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540480.881580797] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540480.919616244] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540480.952520939] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540481.431470726] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [ERROR] [1769540481.446766574] [planner_server]: worldToMap failed: mx,my: 500,500, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540481.446834900] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540481.446850536] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540481.446867565] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540481.446885833] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540481.459243658] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-5] [INFO] [1769540481.460048912] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-5] [INFO] [1769540481.461322225] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-5] [WARN] [1769540481.919740822] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540482.039097477] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540482.069941049] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540482.427486835] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [ERROR] [1769540482.438130151] [planner_server]: worldToMap failed: mx,my: 500,500, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540482.438444559] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540482.438545019] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540482.438571845] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540482.438599172] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540482.449105510] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-5] [WARN] [1769540483.426999948] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [ERROR] [1769540483.430478574] [planner_server]: worldToMap failed: mx,my: 500,500, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540483.430546793] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540483.430565804] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540483.430583540] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540483.430604272] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540483.440834203] [behavior_server]: Running spin
+[component_container_isolated-5] [INFO] [1769540483.440947269] [behavior_server]: Turning 1.57 for spin behavior.
+[component_container_isolated-5] [WARN] [1769540484.427005701] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540485.431518756] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540485.699168362] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 100.225 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540486.427004326] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540487.428727632] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540488.426897755] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540488.729579810] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540489.426790873] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540490.426872953] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540491.426785172] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540491.988768781] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 105.628 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [INFO] [1769540492.141164571] [behavior_server]: spin completed successfully
+[component_container_isolated-5] [ERROR] [1769540492.173687059] [planner_server]: worldToMap failed: mx,my: 500,500, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540492.173752643] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540492.173777181] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540492.173801079] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540492.173827269] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540492.189102049] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-5] [WARN] [1769540492.426832290] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [ERROR] [1769540492.429688672] [planner_server]: worldToMap failed: mx,my: 500,500, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540492.429758619] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540492.429784355] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540492.429809317] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540492.429862681] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540492.451853968] [behavior_server]: Running wait
+[component_container_isolated-5] [WARN] [1769540492.749933394] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540493.426988726] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540494.426921446] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540495.014932729] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 108.132 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540495.426976163] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540496.428661617] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540497.426867940] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540498.033084835] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540498.152439997] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540498.426809111] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540499.152939271] [behavior_server]: wait completed successfully
+[component_container_isolated-5] [ERROR] [1769540499.183663546] [planner_server]: worldToMap failed: mx,my: 500,500, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540499.183727429] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540499.183744397] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540499.185621308] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540499.185649112] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540499.201001881] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-5] [WARN] [1769540499.360272159] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540499.429459195] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [ERROR] [1769540499.435203131] [planner_server]: worldToMap failed: mx,my: 500,500, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540499.435465153] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540499.435532226] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540499.435601536] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540499.435669218] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [WARN] [1769540499.462466077] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [INFO] [1769540499.466242384] [behavior_server]: Running backup
+[component_container_isolated-5] [INFO] [1769540499.471021988] [behavior_server]: DriveOnHeading: no acceleration or deceleration limits set
+[component_container_isolated-5] [WARN] [1769540499.528027866] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540500.079197775] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540500.427887113] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540501.426776382] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540502.210197343] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-5] [WARN] [1769540502.429306020] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540503.427003336] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540504.278364719] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 114.729 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540504.426783387] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540505.430296178] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540506.426789902] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540507.427040782] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540507.991045563] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 118.033 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540508.426876271] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540509.426979422] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540510.426776294] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540511.427096079] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540511.671158298] [behavior_server]: Exceeded time allowance before reaching the DriveOnHeading goal - Exiting DriveOnHeading
+[component_container_isolated-5] [WARN] [1769540511.671219188] [behavior_server]: backup failed
+[component_container_isolated-5] [WARN] [1769540511.671246788] [behavior_server]: [backup] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540511.692019322] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-5] [INFO] [1769540511.692195330] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-5] [INFO] [1769540511.696639109] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-5] [WARN] [1769540512.426803416] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [ERROR] [1769540512.428048341] [planner_server]: worldToMap failed: mx,my: 500,498, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540512.428735124] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540512.428767275] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540512.428789817] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540512.428812656] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540512.440420532] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-5] [WARN] [1769540513.426789312] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [ERROR] [1769540513.433080288] [planner_server]: worldToMap failed: mx,my: 500,498, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540513.433141160] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540513.433159954] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540513.433179331] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540513.433200444] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540513.450845010] [behavior_server]: Running spin
+[component_container_isolated-5] [INFO] [1769540513.455222802] [behavior_server]: Turning 1.57 for spin behavior.
+[component_container_isolated-5] [WARN] [1769540514.426768029] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540515.426783429] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540516.145391163] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 125.238 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540516.429894924] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540517.426776047] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540518.426788558] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540519.427642909] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540520.426792555] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540521.426922622] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540522.427333447] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540522.755461740] [behavior_server]: spin completed successfully
+[component_container_isolated-5] [ERROR] [1769540522.780008297] [planner_server]: worldToMap failed: mx,my: 500,499, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540522.780105916] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540522.780123100] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540522.780138593] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540522.780155085] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540522.789315293] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-5] [WARN] [1769540523.427180241] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [ERROR] [1769540523.434104596] [planner_server]: worldToMap failed: mx,my: 500,499, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540523.434174160] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540523.434194302] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540523.434211786] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540523.434232474] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540523.449503943] [behavior_server]: Running wait
+[sync_slam_toolbox_node-8] [INFO] [1769540524.218902891] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 132.344 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540524.426793854] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540525.426781755] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540526.427733124] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540527.426873592] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540528.428344044] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540529.149852918] [behavior_server]: wait completed successfully
+[component_container_isolated-5] [ERROR] [1769540529.180142428] [planner_server]: worldToMap failed: mx,my: 500,499, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540529.180240072] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540529.180261420] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540529.180299579] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540529.180317728] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [INFO] [1769540529.200245092] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-5] [WARN] [1769540529.426782002] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [ERROR] [1769540529.435767378] [planner_server]: worldToMap failed: mx,my: 500,499, size_x,size_y: 100,100
+[component_container_isolated-5] [WARN] [1769540529.436176570] [planner_server]: Cannot create a plan: the robot's start position is off the global costmap. Planning will always fail, are you sure the robot has been properly localized?
+[component_container_isolated-5] [WARN] [1769540529.436364484] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-5] [WARN] [1769540529.436442047] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (3.00, 0.00)
+[component_container_isolated-5] [WARN] [1769540529.436517432] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [WARN] [1769540529.464212725] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-5] [ERROR] [1769540529.464774056] [bt_navigator]: Goal failed
+[component_container_isolated-5] [WARN] [1769540530.427024438] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540531.427622802] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540532.387010356] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 139.448 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540532.426835601] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540533.427868176] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540534.426783471] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540535.428147685] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540536.426782460] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540537.427428673] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540537.930767647] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 144.057 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540538.428466526] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540539.426792837] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540540.426782839] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540541.426782475] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540542.426844741] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540543.426772883] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540544.426789272] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540545.426796706] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540546.426959311] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540546.985105548] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 152.064 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540547.426780833] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540548.427981338] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540549.431645466] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540550.426818267] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540551.428972978] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540552.427471750] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540553.427027935] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540554.427123781] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540555.427051997] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540556.426863665] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540557.426997909] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540557.438312408] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 160.980 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540558.426796708] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540559.428199258] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540560.426774746] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540561.427049181] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540562.427051460] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540563.426772286] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540564.426786762] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540565.426769986] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540566.426792691] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540567.428073765] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540568.426779144] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540569.427544929] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540570.426790392] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540570.677397045] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 172.593 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540571.427009960] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540572.426815712] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540573.427041405] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540574.428835998] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540575.426775443] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540576.427814641] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540577.426929075] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540578.427050409] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540579.428512825] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540579.854384193] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 180.598 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540580.426783043] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540581.426889472] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540582.426802323] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540583.426785110] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540584.426864856] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540585.429240936] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540586.428869439] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540587.426797283] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540588.426799793] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540589.428021240] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540590.426792511] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540591.426785238] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540592.426818283] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540593.427703461] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540594.427305003] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540595.426798046] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[sync_slam_toolbox_node-8] [INFO] [1769540595.920904396] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 193.834 for reason 'discarding message because the queue is full'
+[component_container_isolated-5] [WARN] [1769540596.426992925] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540597.429559974] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540598.426786094] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540599.426787506] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540600.426779266] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540601.426804974] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540602.426794838] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540603.426990920] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540604.426783813] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540605.427686901] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540606.427055310] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540607.427322154] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540608.426782980] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540609.426835025] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540610.427020282] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540611.426781232] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540612.429017429] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540613.426787760] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540614.426860295] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540615.427073663] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540616.427506473] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[map_saver_server-6] [WARN] [1769540616.811980064] [rcl_lifecycle]: No transition matching 1 found for current state active
+[map_saver_server-6] [WARN] [1769540616.812068795] [rcl_lifecycle]: No transition matching 1 found for current state active
+[map_saver_server-6] [ERROR] [1769540616.812081387] [map_saver]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [WARN] [1769540617.427305673] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540618.426896621] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540619.426791292] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540620.426863315] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540621.426805159] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540622.427305612] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540623.428569089] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540624.427378610] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540625.426832283] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540625.869972843] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-5] [INFO] [1769540625.870136696] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-5] [WARN] [1769540625.904528242] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [WARN] [1769540626.428060485] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540627.428412973] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540628.426924933] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540629.426840152] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540630.427062536] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540631.433409716] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540632.469906248] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540633.490143208] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540634.118149487] [controller_server]: 
+[component_container_isolated-5] 	controller_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [WARN] [1769540634.460663154] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540635.457381254] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540636.487250197] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540637.190111944] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[component_container_isolated-5] [WARN] [1769540637.192533655] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[component_container_isolated-5] [ERROR] [1769540637.192562891] [controller_server]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [WARN] [1769540637.192751658] [rcl_lifecycle]: No transition matching 1 found for current state active
+[component_container_isolated-5] [WARN] [1769540637.201630161] [rcl_lifecycle]: No transition matching 1 found for current state active
+[component_container_isolated-5] [ERROR] [1769540637.201647271] [controller_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [INFO] [1769540637.191867355] [planner_server]: Configuring
+[component_container_isolated-5] [INFO] [1769540637.216413211] [global_costmap.global_costmap]: Configuring
+[component_container_isolated-5] [WARN] [1769540637.426793247] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540638.447395825] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540639.519729734] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540639.619531318] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-5] [WARN] [1769540640.481128876] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540641.335400326] [global_costmap.global_costmap]: Subscribed to Topics: 
+[component_container_isolated-5] [INFO] [1769540641.387501142] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1769540641.393233032] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-5] [WARN] [1769540641.673202766] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540642.182858427] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-5] [WARN] [1769540642.489749952] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540643.036325576] [rcl_lifecycle]: No transition matching 1 found for current state active
+[component_container_isolated-5] [WARN] [1769540643.056516100] [rcl_lifecycle]: No transition matching 1 found for current state active
+[component_container_isolated-5] [ERROR] [1769540643.056551812] [planner_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [WARN] [1769540643.036340445] [rcl_lifecycle]: No transition matching 1 found for current state active
+[component_container_isolated-5] [WARN] [1769540643.075187734] [rcl_lifecycle]: No transition matching 1 found for current state active
+[component_container_isolated-5] [ERROR] [1769540643.075204993] [smoother_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [INFO] [1769540643.066533060] [smoother_server]: Configuring smoother server
+[component_container_isolated-5] [WARN] [1769540643.216362825] [rcl_lifecycle]: No transition matching 1 found for current state active
+[component_container_isolated-5] [INFO] [1769540643.230402229] [behavior_server]: Configuring
+[component_container_isolated-5] [WARN] [1769540643.471954217] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540643.770572800] [rcl_lifecycle]: No transition matching 1 found for current state active
+[component_container_isolated-5] [ERROR] [1769540643.911717294] [behavior_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [WARN] [1769540644.436980257] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540645.943469074] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540646.618111387] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540647.583668498] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540648.452124832] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540649.496494119] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540650.633682384] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540651.549380141] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540652.450113193] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540653.705739235] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540653.725073897] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-5] [INFO] [1769540653.964937019] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[component_container_isolated-5] [WARN] [1769540654.686732448] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540655.003621129] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[component_container_isolated-5] [INFO] [1769540655.116529036] [controller_server]: Creating controller server
+[component_container_isolated-5] [WARN] [1769540655.597631346] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540655.878969082] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-5] [INFO] [1769540656.577150362] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[component_container_isolated-5] [INFO] [1769540656.672229768] [behavior_server]: Configuring spin
+[component_container_isolated-5] [INFO] [1769540656.875524919] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[component_container_isolated-5] [WARN] [1769540656.894008795] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540657.903919122] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540661.495690778] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540663.316760890] [planner_server]: Planner Server has GridBased  planners available.
+[component_container_isolated-5] [WARN] [1769540664.376529044] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540666.223515025] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540669.254605275] [lifecycle_manager_navigation]: [34m[1mHave not received a heartbeat from planner_server.[0m[0m
+[component_container_isolated-5] [WARN] [1769540669.383970207] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [ERROR] [1769540669.494754314] [lifecycle_manager_navigation]: CRITICAL FAILURE: SERVER planner_server IS DOWN after not receiving a heartbeat for 4000 ms. Shutting down related nodes.
+[component_container_isolated-5] [WARN] [1769540671.132085739] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540671.248380210] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[component_container_isolated-5] [INFO] [1769540671.617082478] [lifecycle_manager_navigation]: [34m[1mResetting managed nodes...[0m[0m
+[component_container_isolated-5] [INFO] [1769540672.175943629] [lifecycle_manager_navigation]: [34m[1mDeactivating velocity_smoother[0m[0m
+[component_container_isolated-5] [WARN] [1769540672.729678653] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-5] [WARN] [1769540672.810247742] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-5] [ERROR] [1769540672.881072452] [velocity_smoother]: Unable to start transition 4 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [WARN] [1769540673.191675404] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540674.913575820] [velocity_smoother]: Deactivating
+[component_container_isolated-5] [ERROR] [1769540675.502408492] [lifecycle_manager_navigation]: Failed to change state for node: velocity_smoother
+[component_container_isolated-5] [INFO] [1769540675.823715985] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1769540676.002286080] [lifecycle_manager_navigation]: [34m[1mDeactivating waypoint_follower[0m[0m
+[component_container_isolated-5] [WARN] [1769540676.167563324] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540677.433637022] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-5] [WARN] [1769540677.526541100] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-5] [ERROR] [1769540677.625871624] [waypoint_follower]: Unable to start transition 4 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [WARN] [1769540679.114143273] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [ERROR] [1769540679.686502142] [lifecycle_manager_navigation]: Failed to change state for node: waypoint_follower
+[component_container_isolated-5] [INFO] [1769540679.850287809] [waypoint_follower]: Deactivating
+[component_container_isolated-5] [INFO] [1769540679.986355774] [lifecycle_manager_navigation]: [34m[1mDeactivating bt_navigator[0m[0m
+[component_container_isolated-5] [WARN] [1769540680.114870757] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540680.805644506] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-5] [WARN] [1769540683.666289341] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-5] [WARN] [1769540683.717189444] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540683.763731756] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-5] [ERROR] [1769540684.023392708] [bt_navigator]: Unable to start transition 4 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-5] [WARN] [1769540693.395984260] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540694.044152293] [bt_navigator]: Deactivating
+[component_container_isolated-5] [ERROR] [1769540694.127895498] [lifecycle_manager_navigation]: Failed to change state for node: bt_navigator
+[component_container_isolated-5] [INFO] [1769540694.549392596] [lifecycle_manager_navigation]: [34m[1mDeactivating behavior_server[0m[0m
+[component_container_isolated-5] [INFO] [1769540694.992593725] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-5] [WARN] [1769540696.219098951] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540700.346353383] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [INFO] [1769540701.708968321] [behavior_server]: Deactivating
+[component_container_isolated-5] [INFO] [1769540705.739727146] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[component_container_isolated-5] [WARN] [1769540706.677833698] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540709.664948313] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540721.093529770] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540733.840991941] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540738.070321921] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540745.842440054] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540756.729057938] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540782.209873703] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540841.151660191] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[lifecycle_manager-7] [INFO] [1769540664.422628316] [lifecycle_manager_slam]: [34m[1mHave not received a heartbeat from map_saver.[0m[0m
+[lifecycle_manager-7] [ERROR] [1769540664.501913854] [lifecycle_manager_slam]: CRITICAL FAILURE: SERVER map_saver IS DOWN after not receiving a heartbeat for 4000 ms. Shutting down related nodes.
+[lifecycle_manager-7] [INFO] [1769540664.822015430] [lifecycle_manager_slam]: [34m[1mTerminating bond timer...[0m[0m
+[lifecycle_manager-7] [INFO] [1769540665.115129460] [lifecycle_manager_slam]: [34m[1mResetting managed nodes...[0m[0m
+[lifecycle_manager-7] [INFO] [1769540665.555831021] [lifecycle_manager_slam]: [34m[1mDeactivating map_saver[0m[0m
+[lifecycle_manager-7] [INFO] [1769540669.815550254] [lifecycle_manager_slam]: [34m[1mCleaning up map_saver[0m[0m
+[lifecycle_manager-7] [INFO] [1769540692.936569066] [lifecycle_manager_slam]: [34m[1mManaged nodes have been reset[0m[0m
+[lifecycle_manager-7] [INFO] [1769540696.719070740] [lifecycle_manager_slam]: [34m[1mSuccessfully re-established connections from server respawns, starting back up.[0m[0m
+[lifecycle_manager-7] [INFO] [1769540697.045544134] [lifecycle_manager_slam]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-7] [INFO] [1769540697.538257581] [lifecycle_manager_slam]: [34m[1mConfiguring map_saver[0m[0m
+[map_saver_server-6] [INFO] [1769540669.950103943] [map_saver]: Deactivating
+[map_saver_server-6] [INFO] [1769540670.354448323] [map_saver]: Destroying bond (map_saver) to lifecycle manager.
+[component_container_isolated-5] [WARN] [1769540928.638227145] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-5] [WARN] [1769540930.147392730] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
